@@ -1,0 +1,20 @@
+a.push()
+a.insert(index,element)
+a << 5
+a[1].nil?
+a.object_id
+if the if statement contains only single line
+   a.slice!(index) if condition
+to print
+  - p
+  - print
+yield if block_given?
+proc class - to convert block to object         def greet(&block)
+read about & operator
+scope of lambda and proc
+proc returns to main
+lambda returns to same scope
+methods of block
+  .call
+  .parameters
+read about gems and gemset

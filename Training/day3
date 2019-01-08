@@ -31,3 +31,4 @@ nil.try(:length)
 def sum1(number1, number2)
 puts 'hello' if 3>5
 puts 'hello' unless 3>5
+difference between 'and' and '&&'

@@ -1,21 +1,15 @@
-puts "Enter first number:"
-no1=gets.to_f
-puts "Enter operator(+, -, *, /)"
-op=gets.chomp
-puts "Enter second number:"
-no2=gets.to_f
-if((Float === no1)&&(Float === no2))
-	if(op =='+')
-		puts "Result: #{no1+no2}"
-	elsif(op =='-')
-		puts "Result: #{no1-no2}"
-	elsif(op =='*')
-		puts "Result: #{no1*no2}"
-	elsif(op =='/')
-		puts "Result: #{no1/no2}"
-	else
-		puts "Invalid input"
-	end
-else
-	puts "Invalid input"
+begin
+  puts "Enter first number:"
+  no1=Float(gets.chomp)
+  puts "Enter operator(+, -, *, /)"
+  op=gets.chomp
+  puts "Enter second number:"
+  no2=Float(gets.chomp)
+  if((op=='+')||(op=='-')||(op=='*')||(op=='/'))
+    puts [no1,no2].inject :"#{op}"
+  else
+	  puts "Invalid input"
+  end
+rescue
+  puts "Invalid input"
 end
