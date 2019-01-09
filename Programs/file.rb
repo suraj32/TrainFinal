@@ -3,6 +3,8 @@ begin
   limit=limit+1
   puts 'Enter file name:'
   f = gets.chomp
+  raise 'File not found' if(File.exist?(f)==false)
+  raise 'Read not allowed' if(File.readable?(f)==false)
   puts 'Enter word:'
   w = gets.chomp
   l=0
@@ -12,8 +14,8 @@ begin
       puts l if w == word
     end
   end
-rescue
-  puts 'File does not exist, try again'
+rescue Exception =>e
+  puts e.message
   retry if limit<3
   puts 'Sorry, you exceeded limit'
 end
