@@ -1,0 +1,27 @@
+##VIM
+dd  -cut
+p -paste
+:<line no>  -jump to specific line
+yy  -copy
+/<search_word>, n -next occurence, [shift]+n  -previous occurence
+2dd -cut 2 lines
+2yy -copy 2 lines
+dw  - cut a word
+u -undo
+[ctrl]+r  -redo
+mk and d'k  -to cut few lines
+mk and y'k  -to copy few lines
+gg  -jump to first line of the program
+[shift]+g -jump to last line
+0 -jump to start of specific line
+[shift]+$ -jump to end of specific line
+o -new line and insert mode below current line
+[shift]+o -new line and insert mode above current line
+[shift]+r -replace mode
+:%s/<old word>/<new word> -replace first occurence of old word with new word
+:%s/<old word>/<new word>/g -replace all occurence of old word with new word
+:e <filename> -to open another file
+:e# -jump back to previous file
+:tabe <filename>  -to open new file in same tab, :tabn  -switch to next file, :tabp -switch to previous file
+
+difference between arrows in Gemfile
